@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Montenegrin+Gothic+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:url("https://i.pinimg.com/originals/d6/f8/09/d6f809c56299134efbab36caeba6b4aa.gif");
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+
+    font-family:"Poppins", sans-serif;
+}
+
+main{
+    width:90%;
+    max-width:900px;
+    height:85vh;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    gap:22px;
+
+    padding:50px;
+
+    background:rgba(15,25,20,.45);
+    backdrop-filter:blur(16px);
+
+    border-radius:35px;
+    border:2px solid rgba(82,255,137,.2);
+
+    box-shadow:
+        0 15px 40px rgba(0,0,0,.45),
+        0 0 40px rgba(82,255,137,.15);
+}
+
+.logo{
+    text-decoration:none;
+}
+
+h1{
+    font-family:"Montenegrin Gothic One", serif;
+    font-size:5.2rem;
+    color:#1aa44d;
+    margin:0 0 25px 0; 
+    text-align:center;
+    width:100%;
+    cursor:pointer;
+    transition:.35s;
+    text-shadow:
+        0 0  5px rgba(27, 66, 41, 0.8);
+}
+h1:hover{
+    color:#9effc4;
+    transform:scale(1.05);
+}
+
+.descricao{
+    max-width:620px;
+    text-align:center;
+    color:#f5f5f5;
+    font-size:1.25rem;
+    line-height:1.6;
+    text-shadow:0 2px 10px rgba(0,0,0,.8);
+}
+
+.botao{
+    width:260px;
+    height:68px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border:none;
+    border-radius:45px;
+    cursor:pointer;
+    background:linear-gradient(
+        135deg,
+        #00a84f,
+        #00c75f,
+        #2f9855
+    );
+
+    color:white;
+
+    position:relative;
+    overflow:hidden;
+
+    transition:.35s;
+
+    box-shadow:
+        0 10px 25px rgba(0,0,0,.35);
+}
+
+.botao::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:-120%;
+
+    width:60%;
+    height:100%;
+
+    background:linear-gradient(
+        120deg,
+        transparent,
+        rgba(255,255,255,.4),
+        transparent
+    );
+
+    transition:.6s;
+}
+
+.botao:hover::before{
+    left:150%;
+}
+
+.botao:hover{
+    transform:translateY(-5px) scale(1.05);
+
+    box-shadow:
+        0 0 20px #63ff9b,
+        0 0 40px rgba(99,255,155,.6);
+}
+
+.botao:active{
+    transform:scale(.98);
+}
+
+.botao h3{
+    font-family:"Poppins", sans-serif;
+    font-size:1.15rem;
+    font-weight:700;
+    letter-spacing:1px;
+    text-transform:uppercase;
+    color:white;
+}
+
+@media(max-width:768px){
+
+    body{
+        padding:20px;
+    }
+
+    main{
+        width:100%;
+        height:auto;
+        padding:35px 25px;
+        gap:20px;
+    }
+
+    h1{
+        font-size:3.6rem;
+        margin-top:0;
+    }
+
+    .descricao{
+        font-size:1.1rem;
+    }
+
+    .botao{
+        width:100%;
+        max-width:300px;
+    }
+}
