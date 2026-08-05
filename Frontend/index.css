@@ -8,8 +8,9 @@
 }
 
 body {
-    background-color: #2c1e1a;
+    background: url(/img/index.gif);
     overflow: hidden;
+    
 }
 
 .container {
