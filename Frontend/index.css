@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Birthstone+Bounce:wght@400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -11,17 +11,17 @@
 body {
     background: url(/img/index.gif);
     overflow: hidden;
-       min-height:100vh;
-       margin-bottom: -500px;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    background-size:cover;
-    background-position:center;
-    background-attachment:fixed;
-    font-family:Arial, Helvetica, sans-serif;
-    color:white;
-    
+    min-height: 100vh;
+    margin-bottom: -500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+
 }
 
 .container {
@@ -41,25 +41,25 @@ body {
 }
 
 .descricao {
-    margin-top: 550px;
+    margin-top: 100px;
     font-family: "Raleway", sans-serif;
-     margin-top: 10px;
-    font-size: 26px;
+    margin-top: 50px;
+    font-size: 23px;
     line-height: 1.5;
 }
 
 .botoes {
-    margin-top: 35px;
+    margin-top: 45px;
 }
 
 .botao {
     display: inline-block;
-    padding: 14px 32px;
-    margin: 10px;
+    padding: 10px 20px;
+    margin: 8px;
     background-color: #d0acc19d;
     color: #000000;
     text-decoration: none;
-    border-radius: 20px;
+    border-radius: 55px;
     font-family: "Raleway", sans-serif;
     font-size: 30px;
     transition: 0.3s ease;
@@ -67,7 +67,7 @@ body {
 }
 
 .botao:hover {
-    background-color: #7b5647;
+    background-color: #764967;
     transform: translateY(-4px);
     box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.35);
 }
