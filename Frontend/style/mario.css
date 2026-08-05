@@ -1,429 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
 *{
-
-margin:0;
-padding:0;
-box-sizing:border-box;
-
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
-
-
 
 body{
+    min-height:100vh;
 
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
 
-font-family:Arial, sans-serif;
+    font-family:Arial, sans-serif;
+    color:white;
 
-color:white;
+    background:
+        linear-gradient(
+            rgba(0,0,0,.45),
+            rgba(0,0,0,.75)
+        ),
+        url("https://i.pinimg.com/originals/74/d3/7c/74d37c93fc064534d0e7d05443566b45.gif");
 
-
-background:
-
-linear-gradient(
-rgba(0,0,0,.45),
-rgba(0,0,0,.8)
-),
-
-url("https://i.pinimg.com/originals/74/d3/7c/74d37c93fc064534d0e7d05443566b45.gif");
-
-
-background-size:cover;
-
-background-attachment:fixed;
-
-
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
 }
 
-
+/* HEADER */
 
 header{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
 
-text-align:center;
-
-padding:40px;
-
-
+    margin:30px 0 40px;
 }
 
-
-
-header h1{
-
-
-font-family:'Press Start 2P';
-
-font-size:35px;
-
-color:#ff3030;
-
-
-text-shadow:
-
-4px 4px #ffd700;
-
-
-margin:30px;
-
-
+.logo{
+    text-decoration:none;
 }
 
+.logo h1{
+    font-family:'Press Start 2P';
+    font-size:58px;
+    color:#ff3030;
 
+    text-align:center;
 
-header p{
+    text-shadow:
+        5px 5px #ffd700,
+        0 0 20px rgba(255,215,0,.6);
 
-font-size:20px;
-
+    transition:.3s;
 }
 
-
-
-.voltar{
-
-
-display:inline-block;
-
-padding:12px 20px;
-
-
-background:#2196f3;
-
-border-radius:10px;
-
-
-color:white;
-
-text-decoration:none;
-
-
-font-family:'Press Start 2P';
-
-font-size:11px;
-
-
+.logo h1:hover{
+    transform:scale(1.05);
+    color:#ff5b5b;
 }
 
+/* MAIN */
 
+main{
+    width:100%;
 
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+/* PAINEL */
 
 .principal{
 
+    width:90%;
+    max-width:1250px;
 
-width:90%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
 
-max-width:1000px;
+    gap:80px;
 
+    margin:0 auto;
 
-margin:auto;
+    padding:55px 70px;
 
+    background:rgba(255,255,255,.15);
+    backdrop-filter:blur(12px);
 
-background:
+    border:4px solid #ffd700;
+    border-radius:30px;
 
-rgba(255,255,255,.15);
-
-
-backdrop-filter:blur(10px);
-
-
-border:
-
-4px solid #ffd700;
-
-
-border-radius:25px;
-
-
-padding:40px;
-
-
-display:flex;
-
-align-items:center;
-
-gap:40px;
-
-
+    box-shadow:
+        0 15px 40px rgba(0,0,0,.45);
 }
 
-
+/* IMAGEM */
 
 .mario{
 
+    width:350px;
 
-width:250px;
+    display:block;
 
+    animation:pulo 2s infinite;
 
-animation:pulo 2s infinite;
-
-
+    filter:drop-shadow(0 0 15px rgba(255,255,255,.35));
 }
 
+/* ÁREA DOS BOTÕES */
 
+.conteudo{
 
-
-.conteudo h2{
-
-
-font-family:'Press Start 2P';
-
-font-size:18px;
-
-color:#ffd700;
-
-margin-bottom:20px;
-
-
+    display:flex;
+    justify-content:center;
+    align-items:center;
 }
-
-
-
-.conteudo p{
-
-
-font-size:18px;
-
-line-height:1.7;
-
-
-}
-
-
 
 .botoes{
 
+    display:flex;
+    justify-content:center;
+    align-items:center;
 
-margin-top:40px;
-
-
-display:flex;
-
-gap:20px;
-
-
+    gap:30px;
 }
 
-
+/* BOTÕES */
 
 button{
 
+    width:340px;
+    height:110px;
 
-padding:18px 25px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
 
+    border:none;
+    border-radius:25px;
 
-border:none;
+    cursor:pointer;
 
+    background:linear-gradient(
+        180deg,
+        #ff3939,
+        #d80000
+    );
 
-border-radius:15px;
+    color:white;
 
+    font-family:'Press Start 2P';
+    font-size:14px;
 
-background:#e60012;
+    transition:.3s;
 
-
-color:white;
-
-
-font-family:'Press Start 2P';
-
-
-font-size:12px;
-
-
-cursor:pointer;
-
-
-box-shadow:
-
-0 8px #8b0000;
-
-
-transition:.3s;
-
-
+    box-shadow:
+        0 10px #8b0000,
+        0 18px 30px rgba(0,0,0,.35);
 }
-
-
 
 button:hover{
 
+    transform:translateY(-6px);
 
-transform:translateY(-5px);
+    background:linear-gradient(
+        180deg,
+        #ff5f4f,
+        #ff1e1e
+    );
 
-
-background:#ff3030;
-
-
+    box-shadow:
+        0 0 20px rgba(255,60,60,.6),
+        0 12px 30px rgba(0,0,0,.45);
 }
 
+button:active{
 
+    transform:translateY(3px);
 
-
-
-
-.modal{
-
-
-display:none;
-
-
-position:fixed;
-
-
-top:0;
-
-left:0;
-
-
-width:100%;
-
-height:100%;
-
-
-background:
-
-rgba(0,0,0,.75);
-
-
-justify-content:center;
-
-align-items:center;
-
-
+    box-shadow:
+        0 5px #8b0000;
 }
 
-
-
-.modal-box{
-
-
-background:white;
-
-
-color:#222;
-
-
-width:90%;
-
-max-width:500px;
-
-
-padding:35px;
-
-
-border-radius:20px;
-
-
-border:
-
-5px solid #ffd700;
-
-
-animation:entrada .4s;
-
-
-}
-
-
-
-.modal-box h2{
-
-
-color:#e60012;
-
-margin-bottom:20px;
-
-
-}
-
-
-
-.modal-box span{
-
-
-float:right;
-
-cursor:pointer;
-
-font-size:25px;
-
-
-}
-
-
-
-footer{
-
-
-text-align:center;
-
-padding:25px;
-
-margin-top:50px;
-
-
-background:#111;
-
-
-}
-
-
-
+/* ANIMAÇÃO */
 
 @keyframes pulo{
 
-
-50%{
-
-transform:translateY(-15px);
-
-}
-
+    50%{
+        transform:translateY(-18px);
+    }
 
 }
 
+/* RESPONSIVO */
 
+@media(max-width:900px){
 
-@keyframes entrada{
+    header{
+        margin:20px 0 30px;
+    }
 
+    .logo h1{
+        font-size:34px;
+    }
 
-from{
+    .principal{
 
-transform:scale(.5);
+        flex-direction:column;
 
-opacity:0;
+        gap:40px;
 
-}
+        padding:35px 25px;
 
+        text-align:center;
+    }
 
-to{
+    .mario{
+        width:240px;
+    }
 
-transform:scale(1);
+    .botoes{
 
-opacity:1;
+        flex-direction:column;
+        width:100%;
+    }
 
-}
+    button{
 
-
-}
-
-
-
-
-
-@media(max-width:700px){
-
-
-.principal{
-
-flex-direction:column;
-
-text-align:center;
-
-}
-
-
-.botoes{
-
-flex-direction:column;
-
-}
-
+        width:100%;
+        max-width:340px;
+        height:90px;
+    }
 
 }
