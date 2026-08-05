@@ -1,0 +1,141 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+
+body{
+background: url("https://i.pinimg.com/1200x/d4/e7/76/d4e776caf991b4920a7021857561158e.jpg");
+background-size:cover;
+background-attachment:fixed;
+color:white;
+font-family:Arial;
+}
+
+header{
+text-align:center;
+padding:40px;
+}
+
+h1{
+font-family:'Press Start 2P';
+font-size:30px;
+color:#ffd000;
+text-shadow: 0 0 15px #ffd000;
+margin:30px;
+text-align: center;
+
+}
+
+.voltar{
+border:3px solid #ffd000;
+padding:12px;
+color:white;
+text-decoration:none;
+font-family:'Press Start 2P';
+font-size:12px;
+}
+
+
+.menu{
+width:90%;
+max-width:800px;
+margin:auto;
+}
+
+.botao{
+width:100%;
+padding:25px;
+margin-top:20px;
+background:#111;
+border:3px solid #ffd000;
+color:white;
+font-family:'Press Start 2P';
+font-size:14px;
+cursor:pointer;
+transition:.3s;
+}
+
+.botao:hover{
+background:#ffd000;
+color:black;
+box-shadow:0 0 25px #ffd000;
+}
+
+.informacao{
+display:none;
+
+
+background:
+
+rgba(0,0,0,.8);
+
+
+border-left:
+
+4px solid #ffd000;
+
+
+padding:25px;
+
+
+line-height:1.8;
+
+
+animation:abrir .4s;
+
+
+}
+
+
+
+.informacao ul{
+
+margin-left:20px;
+
+}
+
+
+
+footer{
+
+
+margin-top:60px;
+
+padding:20px;
+
+text-align:center;
+
+background:#111;
+
+color:#aaa;
+
+
+}
+
+
+
+
+@keyframes abrir{
+
+
+from{
+
+opacity:0;
+
+transform:translateY(-10px);
+
+}
+
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+
+}
