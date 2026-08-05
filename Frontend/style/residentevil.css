@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background: url("https://i.pinimg.com/originals/f3/b3/77/f3b377794426fb8ab12be5d87af9a589.gif");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: "Poppins", sans-serif;
+}
+
+main {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar {
+    width: 380px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    background: rgba(10, 10, 10, .72);
+    backdrop-filter: blur(14px);
+    border-right: 2px solid rgba(170, 0, 0, .4);
+    box-shadow:
+        15px 0 40px rgba(0, 0, 0, .55);
+}
+
+.logo {
+    text-decoration: none;
+}
+
+h1 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 3.8rem;
+    color: #c41212;
+    text-align: center;
+    transition: .35s;
+    text-shadow:
+        0 0 8px #000,
+        0 0 18px rgba(196, 18, 18, .7);
+}
+
+h1:hover {
+    color: #ff3b3b;
+    transform: scale(1.05);
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.botao {
+    width: 260px;
+    height: 65px;
+    font-family: "Bebas Neue", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    background: linear-gradient(135deg,
+            #3b0000,
+            #7a000088,
+            #b3000047);
+
+    position: relative;
+    overflow: hidden;
+
+    transition: .35s;
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, .5);
+}
+
+.botao::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -120%;
+
+    width: 60%;
+    height: 100%;
+
+    background: linear-gradient(120deg,
+            transparent,
+            rgba(255, 255, 255, .25),
+            transparent);
+
+    transition: .6s;
+}
+
+.botao:hover::before {
+    left: 150%;
+}
+
+.botao:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 0 20px rgba(255, 0, 0, .7),
+        0 0 35px rgba(255, 0, 0, .45);
+}
+
+.botao:active {
+    transform: scale(.97);
+}
+
+.botao h3 {
+    font-size: 1.15rem;
+    color: white;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+@media(max-width:768px) {
+
+    body {
+        justify-content: center;
+    }
+
+    .sidebar {
+        width: 100%;
+        height: auto;
+
+        padding: 40px 20px;
+
+        border-right: none;
+
+        gap: 40px;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    .botao {
+        width: 100%;
+        max-width: 300px;
+    }
+}
