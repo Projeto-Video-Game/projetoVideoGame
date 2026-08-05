@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=BBH+Bartle&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:url("https://i.pinimg.com/originals/76/cc/71/76cc71fb45866a23a21ba5124743da4e.gif");
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+
+    font-family:Arial, Helvetica, sans-serif;
+    color:white;
+}
+
+main{
+    width:90%;
+    max-width:1000px;
+    text-align:center;
+}
+
+h1{
+    font-size:4.5rem;
+    font-weight:900;
+    color:#ffcb05;
+    margin-bottom:20px;
+    letter-spacing:3px;
+    font-family: "BBH Bartle", sans-serif;
+}
+
+.descricao{
+    font-size:1.2rem;
+    margin-bottom:50px;
+    text-shadow:0 0 10px black;
+}
+
+.menu{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.botao{
+    width:190px;
+    height: 50px;
+    background:rgba(0,0,0,.75);
+    border:3px solid #ffcb05;
+    border-radius:20px;
+    color:white;
+    cursor:pointer;
+    transition:.3s;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    box-shadow:0 0 20px rgba(0,0,0,.5);
+}
+
+.botao div{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:10px;
+}
+
+.botao div{
+    font-size:2rem;
+}
+
+.botao h3{
+    font-size:1.4rem;
+}
+
+.botao:hover{
+    transform:translateY(-10px) scale(1.05);
+
+    background:#ffcb05;
+    color:#2a75bb;
+
+    box-shadow:
+        0 0 20px #ffcb05,
+        0 0 40px #ffcb05;
+}
+
