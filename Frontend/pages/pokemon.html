@@ -1,44 +1,76 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pokemon</title>
+    <title>Pokémon</title>
     <link rel="stylesheet" href="/style/pokemon.css">
 </head>
 <body>
-    
-    <h1>Pokemon</h1>
 
-    <p> Conheça as criaturas mais fantasticas do universo Pokemon</p>
+    <main>
 
-</header>
-<main>
-<div class="menu">
+        <h1>Pokémon</h1>
 
-<button class="botao"> Criador</button>
+        <p class="descricao">
+            Conheça as criaturas mais fantásticas do universo Pokémon.
+        </p>
 
+        <div class="menu">
+        
+            <button class="botao" id="btnCriador">
+                <div>
+                    <h3>Criador</h3>
+                </div>
+            </button>
 
-<div class="informacao">
-<p>
-Pokémon é um famoso universo criado por Satoshi Tajiri em 1996. 
-Ele foca em criaturas fantásticas que os humanos capturam e treinam para batalhar. </p>
-</div>
+            <button class="botao" id="btnCriaturas">
+                <div>
+                    <h3>Criaturas</h3>
+                </div>
+            </button>
 
-<button class="botao"> Criaturas </button>
+        </div>
+    </main>
 
+    <div class="modal" id="modalCriador">
 
-<div class="informacao">
-<p>
-Pokémon são mais de 1.000 espécies de criaturas fictícias inspiradas em animais, plantas, mitos e objetos. Eles possuem tipos elementares, estatísticas de combate e a capacidade de evoluir para formas mais fortes. 
-Você pode consultar fichas completas e detalhes de cada monstrinho no Pokédex Oficial.
-</p>
-</div>
+        <div class="modal-conteudo">
 
-</main>
+            <span class="fechar">&times;</span>
 
+            <h2>Criador</h2>
 
-<script src="/script/pokemon.js"></script>
+            <p>
+                Pokémon é uma franquia criada por
+                Satoshi Tajiri e lançada em 1996.
+                Inspirado por sua infância colecionando insetos,
+                ele desenvolveu um universo onde treinadores capturam,
+                treinam e batalham com criaturas chamadas Pokémon.
+            </p>
+
+        </div>
+
+    </div>
+
+    <div id="pokemonModal" class="modal">
+        <div class="conteudoModal">
+            <span class="fecharModal">&times;</span>
+
+            <h2>Criaturas</h2>
+
+            <div class="modalInfo">
+            <p>
+                Atualmente existem mais de 1.000 espécies de Pokémon.
+                Elas são inspiradas em animais, plantas, lendas e até objetos.
+                Cada Pokémon possui tipos, habilidades e evoluções próprias,
+                tornando cada aventura única.
+            </p>
+            
+        </div>
+    </div>
+
+    <script src="/script/pokemon.js"></script>
 
 </body>
 </html>

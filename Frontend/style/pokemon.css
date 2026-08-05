@@ -1,141 +1,201 @@
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
-
 
 body{
-background: url("https://i.pinimg.com/1200x/d4/e7/76/d4e776caf991b4920a7021857561158e.jpg");
-background-size:cover;
-background-attachment:fixed;
-color:white;
-font-family:Arial;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:url("https://i.pinimg.com/originals/76/cc/71/76cc71fb45866a23a21ba5124743da4e.gif");
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+
+    font-family:Arial, Helvetica, sans-serif;
+    color:white;
 }
 
-header{
-text-align:center;
-padding:40px;
+main{
+    width:90%;
+    max-width:1000px;
+    text-align:center;
 }
 
 h1{
-font-family:'Press Start 2P';
-font-size:30px;
-color:#ffd000;
-text-shadow: 0 0 15px #ffd000;
-margin:30px;
-text-align: center;
-
+    font-size:4.5rem;
+    font-weight:900;
+    color:#ffcb05;
+    margin-bottom:20px;
+    letter-spacing:3px;
 }
 
-.voltar{
-border:3px solid #ffd000;
-padding:12px;
-color:white;
-text-decoration:none;
-font-family:'Press Start 2P';
-font-size:12px;
+.descricao{
+    font-size:1.2rem;
+    margin-bottom:50px;
+    text-shadow:0 0 10px black;
 }
-
 
 .menu{
-width:90%;
-max-width:800px;
-margin:auto;
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
 }
 
 .botao{
-width:100%;
-padding:25px;
-margin-top:20px;
-background:#111;
-border:3px solid #ffd000;
-color:white;
-font-family:'Press Start 2P';
-font-size:14px;
-cursor:pointer;
-transition:.3s;
+    width:190px;
+    height: 50px;
+    background:rgba(0,0,0,.75);
+    border:3px solid #ffcb05;
+    border-radius:20px;
+    color:white;
+    cursor:pointer;
+    transition:.3s;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    box-shadow:0 0 20px rgba(0,0,0,.5);
+}
+
+.botao div{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:10px;
+}
+
+.botao div{
+    font-size:2rem;
+}
+
+.botao h3{
+    font-size:1.4rem;
 }
 
 .botao:hover{
-background:#ffd000;
-color:black;
-box-shadow:0 0 25px #ffd000;
+    transform:translateY(-10px) scale(1.05);
+
+    background:#ffcb05;
+    color:#2a75bb;
+
+    box-shadow:
+        0 0 20px #ffcb05,
+        0 0 40px #ffcb05;
 }
 
-.informacao{
-display:none;
-
-
-background:
-
-rgba(0,0,0,.8);
-
-
-border-left:
-
-4px solid #ffd000;
-
-
-padding:25px;
-
-
-line-height:1.8;
-
-
-animation:abrir .4s;
-
-
+.modal{
+    display:none;
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.7);
+    justify-content:center;
+    align-items:center;
+    z-index:1000;
 }
 
-
-
-.informacao ul{
-
-margin-left:20px;
-
+.modal-conteudo{
+    width:90%;
+    max-width:600px;
+    background:white;
+    color:#333;
+    padding:30px;
+    border-radius:20px;
+    position:relative;
+    animation:abrir .3s ease;
 }
 
-
-
-footer{
-
-
-margin-top:60px;
-
-padding:20px;
-
-text-align:center;
-
-background:#111;
-
-color:#aaa;
-
-
+.modal-conteudo h2{
+    color:#2a75bb;
+    margin-bottom:15px;
 }
 
+.modal-conteudo p{
+    line-height:1.8;
+    font-size:1rem;
+}
 
+.fechar{
+    position:absolute;
+    top:15px;
+    right:20px;
 
+    font-size:2rem;
+    cursor:pointer;
+    color:#666;
+}
+
+.fechar:hover{
+    color:red;
+}
 
 @keyframes abrir{
+    from{
+        opacity:0;
+        transform:scale(.8);
+    }
 
-
-from{
-
-opacity:0;
-
-transform:translateY(-10px);
-
+    to{
+        opacity:1;
+        transform:scale(1);
+    }
 }
 
-
-to{
-
-opacity:1;
-
-transform:translateY(0);
-
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.75);
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
 }
 
+.conteudoModal {
+    background: #1f1f1f;
+    color: #fff;
+    padding: 1.5rem;
+    width: 350px;
+    border-radius: 16px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.15);
+    animation: modalIn .25s ease-out;
+}
 
+@keyframes modalIn {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.fecharModal {
+    position: absolute;
+    right: 12px;
+    top: 8px;
+    font-size: 28px;
+    cursor: pointer;
+    color: white;
+    transition: .2s;
+}
+
+.fecharModal:hover {
+    transform: scale(1.2);
+}
+
+.modalInfo p {
+    margin: .4rem 0;
+    font-size: 1.1rem;
 }
