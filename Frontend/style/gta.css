@@ -1,0 +1,598 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+body{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:flex-end;
+
+    padding-bottom:70px;
+
+
+    background:
+
+    linear-gradient(
+        rgba(0,0,0,.55),
+        rgba(0,0,0,.85)
+    ),
+
+    url("https://i.pinimg.com/736x/37/70/9b/37709bd5f7200d1fbd98fe5c8e66c0fe.jpg");
+
+
+    background-size:cover;
+
+    background-position:center;
+
+    background-attachment:fixed;
+
+
+    font-family:Arial, Helvetica, sans-serif;
+
+    color:white;
+
+}
+
+
+
+
+/* CONTEÚDO PRINCIPAL */
+
+main{
+
+    width:90%;
+
+    max-width:1000px;
+
+    text-align:center;
+
+}
+
+
+
+
+/* TITULO GTA */
+
+h1{
+
+    font-size:4.5rem;
+
+    font-weight:900;
+
+
+    color:#ffd000;
+
+
+    -webkit-text-stroke:3px #000;
+
+
+    text-shadow:
+
+        5px 5px 0 #111,
+
+        0 0 25px #ffd000;
+
+
+    margin-bottom:20px;
+
+    letter-spacing:4px;
+
+}
+
+
+
+
+.descricao{
+
+    font-size:1.2rem;
+
+    margin-bottom:40px;
+
+
+    text-shadow:
+
+    0 0 10px black;
+
+}
+
+
+
+
+/* MENU DOS BOTÕES */
+
+.menu{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:25px;
+
+    flex-wrap:wrap;
+
+}
+
+
+
+
+
+/* BOTÕES ESTILO GTA */
+
+.menu{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:35px;
+
+    flex-wrap:wrap;
+
+}
+
+
+
+.botao{
+
+    width:300px;
+
+    height:160px;
+
+
+    background:
+
+    linear-gradient(
+        145deg,
+        rgba(15,15,15,0.95),
+        rgba(40,40,40,0.85)
+    );
+
+
+    border:2px solid #ffd000;
+
+
+    border-radius:18px;
+
+
+    color:white;
+
+
+    cursor:pointer;
+
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+
+    position:relative;
+
+    overflow:hidden;
+
+
+    transition:.4s;
+
+
+    box-shadow:
+
+    0 0 15px rgba(255,208,0,.3),
+
+    inset 0 0 20px rgba(255,208,0,.1);
+
+
+}
+
+
+
+/* LINHA DE BRILHO PASSANDO */
+
+.botao::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:-100%;
+
+    width:100%;
+
+    height:100%;
+
+
+    background:
+
+    linear-gradient(
+        120deg,
+        transparent,
+        rgba(255,208,0,.5),
+        transparent
+    );
+
+
+    transition:.5s;
+
+}
+
+
+
+.botao:hover::before{
+
+    left:100%;
+
+}
+
+
+
+
+
+.botao div{
+
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    gap:12px;
+
+
+    z-index:2;
+
+
+}
+
+
+
+
+.botao div:first-child{
+
+    font-size:3.5rem;
+
+}
+
+
+
+
+
+.botao h3{
+
+
+    font-size:1.2rem;
+
+
+    text-transform:uppercase;
+
+
+    letter-spacing:2px;
+
+
+    font-weight:900;
+
+
+}
+
+
+
+
+
+.botao:hover{
+
+
+    transform:
+
+    translateY(-15px)
+    scale(1.08);
+
+
+    background:#ffd000;
+
+
+    color:#111;
+
+
+    border-color:white;
+
+
+    box-shadow:
+
+    0 0 25px #ffd000,
+
+    0 0 50px #ffd000;
+
+
+}
+
+
+
+
+
+.botao:hover h3{
+
+    color:#111;
+
+}
+
+
+
+/* MODAIS */
+
+
+.modal{
+
+
+    display:none;
+
+
+    position:fixed;
+
+
+    inset:0;
+
+
+
+    background:
+
+
+    rgba(0,0,0,.75);
+
+
+
+    justify-content:center;
+
+
+    align-items:center;
+
+
+
+    z-index:1000;
+
+
+}
+
+
+
+
+.modal-conteudo{
+
+
+    width:90%;
+
+
+    max-width:600px;
+
+
+
+    background:
+
+
+    linear-gradient(
+
+        145deg,
+
+        #111,
+
+        #222
+
+    );
+
+
+
+    color:white;
+
+
+
+    padding:35px;
+
+
+
+    border-radius:20px;
+
+
+
+    position:relative;
+
+
+
+    border:
+
+    3px solid #ffd000;
+
+
+
+    box-shadow:
+
+
+    0 0 30px #ffd000;
+
+
+
+    animation:
+
+    abrir .3s ease;
+
+
+}
+
+
+
+
+
+.modal-conteudo h2{
+
+
+    color:#ffd000;
+
+
+    margin-bottom:20px;
+
+
+
+    font-size:1.8rem;
+
+
+}
+
+
+
+
+
+.modal-conteudo p{
+
+
+    line-height:1.8;
+
+
+    font-size:1rem;
+
+
+}
+
+
+
+
+
+.fechar{
+
+
+    position:absolute;
+
+
+    top:15px;
+
+
+    right:20px;
+
+
+
+    font-size:2rem;
+
+
+
+    cursor:pointer;
+
+
+
+    color:#ffd000;
+
+
+}
+
+
+
+
+.fechar:hover{
+
+
+    color:white;
+
+
+}
+
+
+
+
+
+/* ANIMAÇÃO */
+
+
+@keyframes abrir{
+
+
+    from{
+
+
+        opacity:0;
+
+
+        transform:scale(.8);
+
+
+    }
+
+
+    to{
+
+
+        opacity:1;
+
+
+        transform:scale(1);
+
+
+    }
+
+
+}
+
+
+
+
+
+
+/* RESPONSIVO */
+
+
+@media(max-width:768px){
+
+
+
+    body{
+
+
+        padding:40px 20px;
+
+
+        align-items:flex-end;
+
+
+    }
+
+
+
+    h1{
+
+
+        font-size:2.8rem;
+
+
+    }
+
+
+
+    .menu{
+
+
+        flex-direction:column;
+
+
+        align-items:center;
+
+
+    }
+
+
+
+    .botao{
+
+
+        width:90%;
+
+
+    }
+
+
+
+}
