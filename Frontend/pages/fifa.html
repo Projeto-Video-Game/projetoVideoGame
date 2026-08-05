@@ -1,269 +1,69 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>FIFA - Franquias de Videogames</title>
-
-
-<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-
-
-<link rel="stylesheet" href="/style/fifa.css">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIFA</title>
+    <link rel="stylesheet" href="/style/fifa.css">
 </head>
-
-
 <body>
 
+    <main>
 
-<header>
+        <h1>FIFA</h1>
 
+        <p class="descricao">
+            Conheça o jogo mais popular do mundo!
+        </p>
 
-<a href="../index.html" class="voltar">
-⬅ VOLTAR
-</a>
+        <div class="menu">
 
-
-
-<h1>
-FIFA
-</h1>
-
-
-
-<p>
-A experiência do futebol virtual que marcou gerações
-</p>
-
-
-</header>
-
-
-
-
-<main>
-
-
-<section class="principal">
-
-
-
-<img 
-src="https://i.pinimg.com/736x/9f/76/e9/9f76e90345e0df4fcae386f6cfa68741.jpg"
-class="fifa-img"
-alt="FIFA">
-
-
-
-
-
-<div class="conteudo">
-
-
-<h2>
-⚽ FIFA EXPERIENCE
-</h2>
-
-
-
-<p>
-
-Viva a emoção do futebol virtual,
-monte seu time dos sonhos e dispute
-partidas inesquecíveis nos maiores
-campos do mundo.
-
-</p>
-
-
-
-<div class="botoes">
-
-
-<button onclick="abrirModal('modosFifa')">
-
-⚽ MODOS DE JOGO
-
-</button>
-
-
-
-<button onclick="abrirModal('lendasFifa')">
-
-🏆 LENDAS DO FIFA
-
-</button>
-
-
-
+           <div class="botoes">
+    <button type="button">Lendas da FIFA</button>
+    <button type="button">Modo De Jogo</button>
 </div>
 
+        </div>
 
-</div>
+    </main>
 
+    <div class="modal" id="modalLendas">
 
+        <div class="modal-conteudo">
 
-</section>
+            <span class="fechar">&times;</span>
 
+            <h2>Lendas da FIFA</h2>
 
-</main>
+            <p>
+                FIFA é uma franquia criada pela EA Sports e lançada em 1993.
+                Inspirada em um jogo de futebol realista, a série se tornou o jogo de futebol mais vendido do mundo.
+            </p>
 
+        </div>
 
+    </div>
 
+    <div class="modal" id="modalModoJogo">
 
+        <div class="modal-conteudo">
 
+            <span class="fechar">&times;</span>
 
+            <h2>Modo De Jogo</h2>
 
+            <p>
+                O FIFA oferece diversos modos de jogo, incluindo a temporada de carreira,
+                partidas amigáveis e competições online.
+                Cada modo apresenta desafios únicos e oportunidades para aprimorar suas habilidades como jogador.
+                tornando cada aventura única.
+            </p>
 
-<div class="modal" id="modosFifa">
+        </div>
 
+    </div>
 
-<div class="modal-box">
-
-
-<span onclick="fecharModal('modosFifa')">
-✖
-</span>
-
-
-
-<h2>
-⚽ Modos de Jogo
-</h2>
-
-
-
-<p>
-
-
-O FIFA ficou conhecido por seus modos
-que deixam a experiência mais próxima
-de uma partida real.
-
-
-<br><br>
-
-
-🎮 <strong>Modo Carreira:</strong>
-
-Gerencie um clube, contrate jogadores,
-treine atletas e conquiste campeonatos.
-
-
-<br><br>
-
-
-💎 <strong>Ultimate Team:</strong>
-
-Monte seu time dos sonhos usando cartas
-de jogadores e enfrente outros usuários.
-
-
-<br><br>
-
-
-🌎 <strong>Volta Football:</strong>
-
-Uma modalidade inspirada no futebol de rua,
-com partidas menores e mais dinâmicas.
-
-
-</p>
-
-
-</div>
-
-
-</div>
-
-
-
-
-
-
-
-
-
-
-<div class="modal" id="lendasFifa">
-
-
-<div class="modal-box">
-
-
-<span onclick="fecharModal('lendasFifa')">
-✖
-</span>
-
-
-
-<h2>
-🏆 Lendas do FIFA
-</h2>
-
-
-
-<p>
-
-
-Durante sua história, o FIFA trouxe
-grandes estrelas do futebol mundial.
-
-
-<br><br>
-
-
-⭐ <strong>Pelé:</strong>
-
-Uma das maiores lendas do futebol,
-presente em versões especiais.
-
-
-<br><br>
-
-
-⚡ <strong>Messi:</strong>
-
-Um dos jogadores mais populares
-entre os fãs da franquia.
-
-
-<br><br>
-
-
-🔥 <strong>Cristiano Ronaldo:</strong>
-
-Um dos maiores nomes da história do jogo,
-presente em diversas edições.
-
-
-<br><br>
-
-
-A evolução dos jogadores e seus atributos
-sempre foi uma das partes mais esperadas
-pelos fãs.
-
-
-</p>
-
-
-</div>
-
-
-</div>
-
-
-
-
-
-<script src="/script/fifa.js"></script>
-
+    <script src="/script/fifa.js"></script>
 
 </body>
-
 </html>
