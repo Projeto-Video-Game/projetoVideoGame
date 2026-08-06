@@ -1,44 +1,85 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mortal Kombat</title>
     <link rel="stylesheet" href="/style/mortalkombat.css">
 </head>
+
 <body>
 
     <main>
+
         <h1 class="titulo">MORTAL KOMBAT</h1>
-        
+
         <p class="descricao">
-            Prepare-se para o torneio definitivo! Enfrente os guerreiros mais poderosos de Realm a Realm e escolha o seu destino.
+            Prepare-se para o torneio definitivo! Enfrente os guerreiros mais poderosos
+            de Realm a Realm e escolha o seu destino.
         </p>
 
         <div class="botoes">
-            <button class="botao" type="button">Sinopse</button>
-            <button class="botao" type="button">Arenas de Luta</button>
+            <button id="btnSinopse" class="botao" type="button">
+                Sinopse
+            </button>
+
+            <button id="btnArena" class="botao" type="button">
+                Arenas de Luta
+            </button>
         </div>
+
     </main>
 
-    <div class="modal" id="modalSinopse">
-        <div class="modal-conteudo">
-            <span class="fechar">&times;</span>
-            <h2>Sinopse</h2>
-            <p>
-                Guerreiros de diferentes dimensões se reúnem no torneio Mortal Kombat para defender Earthrealm da invasão de Outworld. Lute pela sobrevivência e domine golpes fatais!
-            </p>
-        </div>
+    <div class="painel-info" id="modalSinopse">
+
+        <span class="fechar">&times;</span>
+
+        <h2>SINOPSE</h2>
+
+        <p>
+            O enredo clássico de Mortal Kombat gira em torno de um torneio de artes
+            marciais milenar que decide o destino da Terra (Earthrealm).
+
+            Lutadores do nosso plano enfrentam guerreiros tirânicos de dimensões
+            rivais, como a Exoterra (Outworld), para impedir que o mundo seja
+            conquistado por Shang Tsung e pelo imperador Shao Kahn.
+        </p>
+
     </div>
 
-    <div class="modal" id="modalMapas">
-        <div class="modal-conteudo">
-            <span class="fechar">&times;</span>
-            <h2>Arenas de Luta</h2>
-            <p>
-                Explore cenários icônicos como The Pit, Dead Pool, Shaolin Monks e o Trono de Shao Kahn, repletos de armadilhas e interações mortais.
-            </p>
-        </div>
+    <div class="painel-info" id="modalArena">
+
+        <span class="fechar">&times;</span>
+
+        <h2>ARENAS DE LUTA</h2>
+
+        <ul>
+            <li>
+                <strong>The Courtyard:</strong>
+                O clássico pátio da ilha de Shang Tsung.
+            </li>
+
+            <li>
+                <strong>Goro's Lair:</strong>
+                A caverna subterrânea do príncipe Shokan.
+            </li>
+
+            <li>
+                <strong>The Pit:</strong>
+                A famosa ponte onde é possível executar Stage Fatalities.
+            </li>
+
+            <li>
+                <strong>The Dead Pool:</strong>
+                Arena industrial repleta de ácido corrosivo.
+            </li>
+        </ul>
+
     </div>
 
     <script src="/script/mortalkombat.js"></script>
+
+</body>
+
+</html>

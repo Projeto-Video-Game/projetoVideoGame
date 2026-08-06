@@ -1,23 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Prop+Single:wght@100..900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body {
-    min-height: 100vh;
-    display: flex;
-    justify-content: center; 
-    align-items: flex-start;  
-    padding-top: 50px;        
-
-    /* Fundo escuro */
-    background: #000000;
-
-    font-family: 'Impact', 'Arial Black', sans-serif;
-    color: white;
+body{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column; 
+    align-items:center;
+    background:#000;
+    font-family:'Impact','Arial Black',sans-serif;
+    color:white;
+    padding-top:50px;
+      font-family: "Open Sans", sans-serif;
 }
-
 
 main {
     width: 92%;
@@ -29,11 +28,7 @@ main {
     gap: 25px;
     padding: 50px 40px; 
     border-radius: 18px;
-
- 
     background: url("https://i.pinimg.com/originals/f6/cf/14/f6cf14787fb8bfce166ffbc6f43ab656.gif") no-repeat center center/cover;
-
-  
     border: 3px solid #ff2200;
     box-shadow: 
         0 0 30px rgba(255, 34, 0, 0.8),
@@ -83,11 +78,10 @@ main {
     text-transform: uppercase;
     letter-spacing: 2px;
     color: #ffffff;
-
+    font-family: "Bitcount Prop Single", system-ui;
     background: rgba(15, 0, 0, 0.85);
     border: 2px solid #ff2200;
     border-radius: 8px;
-
     cursor: pointer;
     transition: all 0.3s ease;
     box-shadow: 0 0 12px rgba(255, 34, 0, 0.4);
@@ -108,69 +102,66 @@ main {
     transform: scale(0.98);
 }
 
-
-.modal {
-    display: none;
-    position: fixed;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.85);
-    backdrop-filter: blur(4px);
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
+.painel-info{
+    display:none;
+    width:92%;
+    max-width:850px;
+    margin-top:25px;
+    padding:30px;
+    background:
+        linear-gradient(
+            180deg,
+            #160000,
+            #070707
+        );
+    border:3px solid #ff2200;
+    border-radius:12px;
+    box-shadow:
+        0 0 20px rgba(255,34,0,.6);
+    position:relative;
 }
 
-.modal-conteudo {
-    width: 90%;
-    max-width: 550px;
-    background: #111111;
-    color: #ffffff;
-    padding: 35px;
-    border-radius: 12px;
-    border: 2px solid #ff2200;
-    position: relative;
-    box-shadow: 0 0 30px rgba(255, 34, 0, 0.6);
-    animation: abrir 0.3s ease forwards;
+.painel-info h2{
+    color:#ffcc00;
+      font-family: "Bitcount Prop Single", system-ui;
+    text-align:center;
+    margin-bottom:20px;
+    font-size:2rem;
+    letter-spacing:2px;
+    text-transform:uppercase;
 }
 
-.modal-conteudo h2 {
-    font-family: 'Impact', sans-serif;
-    color: #ffcc00;
-    margin-bottom: 15px;
-    font-size: 2.2rem;
-    letter-spacing: 1.5px;
-    text-transform: uppercase;
+.painel-info p,
+.painel-info li{
+    line-height:1.8;
+    font-size:1.05rem;
 }
 
-.modal-conteudo p {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6;
-    font-size: 1.05rem;
-    color: #cccccc;
+.painel-info ul{
+    padding-left:25px;
 }
 
-.fechar {
-    position: absolute;
-    top: 12px;
-    right: 18px;
-    font-size: 2rem;
-    cursor: pointer;
-    color: #888888;
-    transition: color 0.2s;
+.fechar{
+    position:absolute;
+    top:10px;
+    right:15px;
+    font-size:2rem;
+    cursor:pointer;
+    color:#ff2200;
 }
 
-.fechar:hover {
-    color: #ff2200;
+.fechar:hover{
+    color:#ffcc00;
 }
 
-
-@keyframes abrir {
-    from {
-        opacity: 0;
-        transform: translateY(-20px) scale(0.9);
+@keyframes abrirPainel{
+    from{
+        opacity:0;
+        transform:translateY(30px);
     }
-    to {
-        opacity: 1;
-        transform: translateY(0) scale(1);
+
+    to{
+        opacity:1;
+        transform:translateY(0);
     }
 }
