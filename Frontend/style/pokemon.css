@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=BBH+Bartle&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Vibes&display=swap');
 
 *{
     margin:0;
@@ -61,6 +62,7 @@ h1{
     justify-content:center;
     align-items:center;
     box-shadow:0 0 20px rgba(0,0,0,.5);
+     font-family: "Vibes", system-ui;
 }
 
 .botao div{
@@ -80,12 +82,90 @@ h1{
 
 .botao:hover{
     transform:translateY(-10px) scale(1.05);
-
     background:#ffcb05;
     color:#2a75bb;
-
     box-shadow:
         0 0 20px #ffcb05,
         0 0 40px #ffcb05;
 }
 
+.modal{
+    display:none;
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.7);
+    justify-content:center;
+    align-items:center;
+    z-index:9999;
+}
+
+.modal-conteudo{
+    width:90%;
+    max-width:800px;
+    background:#d62828;
+    border:8px solid #8b0000;
+    border-radius:30px;
+    padding:90px 40px 40px;
+    position:relative;
+    box-shadow:
+        0 0 30px rgba(0,0,0,.6);
+    overflow:hidden;
+}
+
+.modal-conteudo::before{
+    content:"";
+    position:absolute;
+    top:75px;
+    left:30px;
+    right:30px;
+    bottom:30px;
+    background:#c7f9cc;
+    border:4px solid #444;
+    border-radius:20px;
+    z-index:1;
+}
+
+.modal-conteudo::after{
+    content:"";
+    position:absolute;
+    top:18px;
+    left:20px;
+    width:45px;
+    height:45px;
+    background:#4cc9f0;
+    border-radius:50%;
+    box-shadow:
+        70px 0 0 #ffcb05,
+        130px 0 0 #2a75bb;
+    z-index:3;
+}
+
+.modal-conteudo h2,
+.modal-conteudo p,
+.modal-conteudo ul{
+    position:relative;
+    z-index:2;
+}
+
+.modal-conteudo h2{
+    color:#1d3557;
+    text-align:center;
+    margin-bottom:20px;
+    font-family: "Vibes", system-ui;
+}
+
+.modal-conteudo p,
+.modal-conteudo ul{
+    color:#222;
+    line-height:1.8;
+}
+
+.fechar{
+    position:absolute;
+    top:15px;
+    right:20px;
+    z-index:4;
+    font-size:2rem;
+    color:white;
+    cursor:pointer;
+}
