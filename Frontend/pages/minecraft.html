@@ -10,29 +10,73 @@
 
 <body>
 
-   <main>
+    <main>
 
-    <aside class="sidebar">
+        <aside class="sidebar">
 
-        <a href="/index.html" class="logo">
-            <h1>Minecraft</h1>
-        </a>
+            <a href="/index.html" class="logo">
+                <h1>Minecraft</h1>
+            </a>
 
-        <div class="menu">
+            <div class="menu">
 
-            <button class="botao" id="btnBiomas">
-                <h3>Biomas</h3>
-            </button>
+                <button class="botao" id="btnBiomas">
+                    <h3>Biomas</h3>
+                </button>
 
-            <button class="botao" id="btnMobs">
-                <h3>Mobs</h3>
-            </button>
+                <button class="botao" id="btnMobs">
+                    <h3>Mobs</h3>
+                </button>
+
+            </div>
+
+        </aside>
+
+    </main>
+
+    <div class="modal" id="modalBiomas">
+        <div class="modal-conteudo">
+            <span class="fechar">&times;</span>
+            <h2>Criaturas</h2>
+            <P> O Minecraft possui mais de 60 biomas oficiais divididos entre o Mundo Superior (Overworld), o Nether e o
+                End <br>
+                <strong>Planícies e Campos:</strong>
+                Planície, Planície de girassóis, Pradaria, Campo de cogumelos <br>
+
+
+                <strong>Florestas:</strong>
+                Floresta, Floresta de flores, Floresta de bétulas, Floresta de bétulas antigas, Floresta escura, Jardim
+                pálido
+                <br>
+
+                <strong>Taigas e Regiões Frias:</strong>
+                Taiga, Taiga nevada, Taiga de pinheiros antigos, Taiga de abetos antigos, Bosque, Encostas nevadas,
+                Planície nevada, Picos de gelo, Picos congelados. <br>
+
+                <strong>Montanhas e Picos:</strong>
+                : Picos pontiagudos, Picos rochosos, Colinas das ventanias (e variantes com cascalho e floresta),
+                Cerejal (bioma de cerejeiras).
+            </P>
 
         </div>
+    </div>
 
-    </aside>
+    <div class="modal" id="modalMobs">
+        <div class="modal-conteudo">
+            <span class="fechar">&times;</span>
+            <h2>Criador</h2>
 
-</main>
+            <p>
+             No Minecraft, os mobs são as entidades vivas que habitam o mundo do jogo e possuem inteligência 
+             artificial própria para se mover e interagir com o ambiente. Eles surgem (fazem spawn) com base 
+             em fatores específicos, como o nível de iluminação, a hora do dia e o bioma em que o jogador se encontra. 
+             Divididos em categorias como passivos (animais domesticáveis), neutros (que só atacam sob provocação), hostis 
+             (monstros agressivos que atacam à primeira vista) e chefes poderosos, os mobs são fundamentais para a sobrevivência, pois 
+             fornecem recursos vitais — como comida, couro e poções —, além de pontos de experiência e o desafio central do combate 
+             no jogo.
+            </p>
+        </div>
+    </div>
 
     <script src="/script/minecraft.js"></script>
 
