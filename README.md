@@ -31,20 +31,6 @@ Este projeto foi desenvolvido com os conhecimentos adquiridos nas disciplinas do
 <img width="69" height="28" alt="image" src="https://github.com/user-attachments/assets/1d254533-37fb-4654-9374-aba22d7f7a3d" />
 
 
-
-
-# Funcionalidades
-
-✅ Página inicial com apresentação do projeto.
-✅ Navegação entre os 10 videogames clássicos.
-✅ Informações sobre cada jogo.
-✅ Curiosidades.
-✅ Desenvolvedora.
-✅ Ano de lançamento.
-✅ Imagens ilustrativas.
-✅ Layout responsivo.
-✅ Interface moderna e intuitiva.
-
 # Como executar o projeto
 
 ### 1. Clone o repositório
