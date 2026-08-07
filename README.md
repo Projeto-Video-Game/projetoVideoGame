@@ -1,38 +1,39 @@
 # 🎮 Projeto Clássicos dos Videogames
 
-## 📖 Sobre o projeto
+##  Sobre o projeto
 
 O **Clássicos dos Videogames** é uma aplicação **Frontend** desenvolvida para apresentar informações sobre alguns dos jogos mais famosos da história dos videogames. O projeto reúne páginas dedicadas a cada título, destacando curiosidades, história, desenvolvedoras e impacto na indústria dos games.
 
-Este projeto foi desenvolvido com os conhecimentos adquiridos nas disciplinas do **2º semestre do Curso Técnico de Desenvolvimento de Sistemas do SENAI Sorocaba - Gaspar Ricardo Júnior**, sob a orientação do **Prof. Vedilson Prado**.
+Este projeto foi desenvolvido com os conhecimentos adquiridos nas disciplinas do **2º semestre do Curso Técnico de Desenvolvimento de Sistemas do SENAI Sorocaba - Gaspar Ricardo Júnior**, sob a orientação do @vedilsonprado.
 
 
-# 🕹️ Jogos apresentados
+#  Jogos apresentados
 
-🍄 Super Mario
-💎 The Sims
-🐉 Mortal Kombat
-🧟 Resident Evil
-💙 Sonic
-⛏️ Minecraft
-🚗 Grand Theft Auto (GTA)
-⚽ FIFA
-🗺️ Uncharted
-⚡ Pokémon
+- Super Mario
+- The Sims
+- Mortal Kombat
+- Resident Evil
+- Sonic
+- Minecraft
+- Grand Theft Auto (GTA)
+- FIFA
+- Uncharted
+- Pokémon
 
 
 
-# 💻 Tecnologias Utilizadas
+# Tecnologias Utilizadas
 
 ## Frontend
 
-**HTML5** – Estrutura das páginas.
-**CSS3** – Estilização e responsividade.
-**JavaScript** – Interatividade e navegação entre as páginas.
+<img width="127" height="28" alt="image" src="https://github.com/user-attachments/assets/765e5fa2-20fc-4e7c-98c6-b292863c8044" />
+<img width="88" height="28" alt="image" src="https://github.com/user-attachments/assets/1c952c1e-fedb-4590-b1c7-982979852ab3" />
+<img width="69" height="28" alt="image" src="https://github.com/user-attachments/assets/1d254533-37fb-4654-9374-aba22d7f7a3d" />
 
 
 
-# 📄 Funcionalidades
+
+# Funcionalidades
 
 ✅ Página inicial com apresentação do projeto.
 ✅ Navegação entre os 10 videogames clássicos.
@@ -44,7 +45,7 @@ Este projeto foi desenvolvido com os conhecimentos adquiridos nas disciplinas do
 ✅ Layout responsivo.
 ✅ Interface moderna e intuitiva.
 
-# 🚀 Como executar o projeto
+# Como executar o projeto
 
 ### 1. Clone o repositório
 bash
@@ -61,7 +62,7 @@ Abra o arquivo **index.html** no navegador.
 
 
 
-# 📑 Organização do Projeto
+# Organização do Projeto
 
 Planejamento das páginas.
 Organização dos arquivos por pastas.
@@ -70,7 +71,7 @@ Interface inspirada nos principais jogos da história.
 
 
 
-# 📚 Objetivos do Projeto
+# Objetivos do Projeto
 
 Este projeto tem como finalidade colocar em prática os conhecimentos de:
 
@@ -83,7 +84,7 @@ Navegação entre páginas
 Design de interfaces
 
 
-# 👨‍💻 Desenvolvedores
+# Desenvolvedores
 
-Miriã Lopes Ferraz
-Maria Eduarda Norbutas
+@Miriã Lopes Ferraz
+@Maria Eduarda Norbutas
