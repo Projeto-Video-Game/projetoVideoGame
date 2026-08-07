@@ -31,52 +31,6 @@ Este projeto foi desenvolvido com os conhecimentos adquiridos nas disciplinas do
 **JavaScript** – Interatividade e navegação entre as páginas.
 
 
-# 📂 Estrutura do Projeto
-📁 Projeto-Videogames
-│
-├── 📄 index.html
-├── 📄 mario.html
-├── 📄 sims.html
-├── 📄 mortal-kombat.html
-├── 📄 resident-evil.html
-├── 📄 sonic.html
-├── 📄 minecraft.html
-├── 📄 gta.html
-├── 📄 fifa.html
-├── 📄 uncharted.html
-├── 📄 pokemon.html
-│
-├── 📁 css
-│   ├── style.css
-│   ├── mario.css
-│   ├── sims.css
-│   ├── mortal.css
-│   ├── resident.css
-│   ├── sonic.css
-│   ├── minecraft.css
-│   ├── gta.css
-│   ├── fifa.css
-│   ├── uncharted.css
-│   └── pokemon.css
-│
-├── 📁 js
-│   └── script.js
-│
-├── 📁 img
-│   ├── mario/
-│   ├── sims/
-│   ├── mortal-kombat/
-│   ├── resident-evil/
-│   ├── sonic/
-│   ├── minecraft/
-│   ├── gta/
-│   ├── fifa/
-│   ├── uncharted/
-│   └── pokemon/
-│
-└── 📄 README.md
-
-
 
 # 📄 Funcionalidades
 
