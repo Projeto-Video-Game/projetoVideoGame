@@ -4,7 +4,7 @@
 
 O **Clássicos dos Videogames** é uma aplicação **Frontend** desenvolvida para apresentar informações sobre alguns dos jogos mais famosos da história dos videogames. O projeto reúne páginas dedicadas a cada título, destacando curiosidades, história, desenvolvedoras e impacto na indústria dos games.
 
-Este projeto foi desenvolvido com os conhecimentos adquiridos nas disciplinas do **2º semestre do Curso Técnico de Desenvolvimento de Sistemas do SENAI Sorocaba - Gaspar Ricardo Júnior**, sob a orientação do @vedilsonprado.
+Este projeto foi desenvolvido com os conhecimentos adquiridos nas disciplinas do **2º semestre do Curso Técnico de Desenvolvimento de Sistemas do SENAI Sorocaba - Gaspar Ricardo Júnior**, sob a orientação do https://github.com/vedilsonprado.
 
 
 #  Jogos apresentados
