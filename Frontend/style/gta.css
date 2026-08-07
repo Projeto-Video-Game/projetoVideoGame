@@ -134,3 +134,128 @@ main{
         max-width:320px;
     }
 }
+
+.modal{
+    display:none;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    justify-content:center;
+    align-items:flex-start;
+    background:rgba(0,0,0,.45);
+    z-index:999;
+}
+
+.modal-conteudo{
+    position:relative;
+    width:85%;
+    max-width:1050px;
+    margin-top:35px;
+    background:linear-gradient(
+        180deg,
+        #181818 0%,
+        #111111 100%
+    );
+    border-top:5px solid #d40000;
+    border-left:1px solid #444;
+    border-right:1px solid #444;
+    border-bottom:1px solid #444;
+    border-radius:10px;
+    padding:30px 40px;
+    color:white;
+    box-shadow:
+        0 15px 40px rgba(0,0,0,.75),
+        0 0 20px rgba(212,0,0,.35);
+    animation:modalGTA .35s ease;
+}
+
+@keyframes modalGTA{
+
+    from{
+        transform:translateY(-120px);
+        opacity:0;}
+    to{
+        transform:translateY(0);
+        opacity:1;}
+}
+
+.modal-conteudo h2{
+    color:#ff2d2d;
+    font-size:2rem;
+    margin-bottom:18px;
+    text-transform:uppercase;
+    letter-spacing:2px;
+}
+
+.modal-conteudo p{
+    font-size:1.08rem;
+    line-height:1.8;
+    color:#efefef;
+}
+
+.modal-conteudo strong{
+    color:#ff4a4a;
+}
+
+.fechar{
+    position:absolute;
+    right:20px;
+    top:15px;
+    color:white;
+    font-size:35px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:.25s;
+}
+
+.fechar:hover{
+    color:#ff2d2d;
+    transform:scale(1.2);
+
+}
+
+.modal-conteudo::before{
+    position:absolute;
+    left:0;
+    top:0;
+    width:100%;
+    height:34px;
+    background:#d40000;
+    color:white;
+    display:flex;
+    align-items:center;
+    padding-left:18px;
+    font-size:.9rem;
+    font-weight:700;
+    letter-spacing:3px;
+    border-radius:8px 8px 0 0;
+
+}
+
+.modal-conteudo h2{
+    margin-top:25px;
+
+}
+
+@media(max-width:768px){
+
+    .modal-conteudo{
+        width:94%;
+        margin-top:20px;
+        padding:25px;
+
+    }
+
+    .modal-conteudo h2{
+        font-size:1.5rem;
+
+    }
+
+    .modal-conteudo p{
+        font-size:.95rem;
+
+    }
+
+}
