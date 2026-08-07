@@ -192,3 +192,101 @@ button:active{
     }
 
 }
+
+.modal{
+    display:none;
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.35);
+    z-index:9999;
+    justify-content:flex-start;
+    align-items:center;
+    padding-left:40px;
+}
+
+.modal-conteudo{
+    width:420px;
+    max-width:calc(100vw - 80px);
+    min-height:350px;
+    background:#28a745;
+    border:8px solid #1f7d32;
+    border-radius:0 0 20px 20px;
+    padding:80px 25px 25px;
+    position:relative;
+    box-shadow:
+        0 0 30px rgba(0,0,0,.4);
+    animation:canoMario .4s ease;
+}
+
+.modal-conteudo::before{
+    position:absolute;
+    top:-45px;
+    left:-25px;
+    content:"";
+    width:calc(100% + 50px);
+    height:60px;
+    background:linear-gradient(
+        90deg,
+        #2fd648,
+        #69ff7e,
+        #2fd648
+    );
+    border:6px solid #0c5f1c;
+    border-radius:15px;
+    z-index:1;
+}
+
+.modal-conteudo h2,
+.modal-conteudo p,
+.modal-conteudo strong,
+.fechar{
+    position:relative;
+    z-index:2;
+}
+
+.modal-conteudo h2{
+    text-align:center;
+    font-family:'Press Start 2P', cursive;
+    font-size:1.1rem;
+    color:white;
+    margin-bottom:25px;
+    text-shadow:
+        3px 3px 0 #0c5f1c;
+}
+
+.modal-conteudo p{
+    color:white;
+    line-height:1.8;
+    font-size:1rem;
+}
+
+.modal-conteudo strong{
+    color:#ffe600;
+}
+
+.fechar{
+    position:absolute;
+    top:10px;
+    right:18px;
+    color:white;
+    font-size:2rem;
+    cursor:pointer;
+}
+
+.fechar:hover{
+    transform:scale(1.15);
+}
+
+@keyframes canoMario{
+
+    from{
+        opacity:0;
+        transform:translateY(100px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
